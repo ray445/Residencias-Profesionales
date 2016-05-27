@@ -13,7 +13,7 @@ sexo char(1) not null,
 )
 
 create table Carreras(
-cve_carrera varchar(10) primary key,
+cve_carrera varchar(15) primary key,
 nombre varchar(50) not null unique
 )
 
