@@ -20,7 +20,10 @@ nombre varchar(50) not null unique
 create table Usuarios(
 NombreUser varchar(30) not null,
 Contraseña varchar(30) not null,
-Cargo varchar(30) not null,
+Cargo varchar(30) not null
+)
+
+create table FechasRev(
 Fecha1 date,
 Fecha2 date,
 Fecha3 date,
