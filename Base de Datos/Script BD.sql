@@ -24,6 +24,7 @@ Cargo varchar(30) not null
 )
 
 create table FechasRev(
+FechaId varchar(10) foreign key,
 Fecha1 date,
 Fecha2 date,
 Fecha3 date,
