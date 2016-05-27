@@ -30,3 +30,9 @@ Fecha3 date,
 Fecha4 date,
 Fecha5 date
 )
+
+create table Asesores(
+nombre varchar(30) not null,
+correo varchar(60) not null,
+telefono varchar(13)
+)
