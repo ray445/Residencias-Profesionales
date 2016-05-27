@@ -1,0 +1,21 @@
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe.config
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.pdb
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csprojResolveAssemblyReference.cache
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Form1.resources
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Properties.Resources.resources
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csproj.GenerateResource.Cache
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.exe
+C:\Users\Juan Luis\Documents\Visual Studio 2012\Projects\Graficacion\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.pdb
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe.config
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.exe
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.pdb
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.pdb
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csprojResolveAssemblyReference.cache
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Form1.resources
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Properties.Resources.resources
+C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csproj.GenerateResource.Cache
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe.config
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.exe
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.pdb
