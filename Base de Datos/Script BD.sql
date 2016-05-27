@@ -23,8 +23,9 @@ Contraseña varchar(30) not null,
 Cargo varchar(30) not null
 )
 
+--aqui se tendra que crear una relacion con proyectos
 create table FechasRev(
-FechaId varchar(10) foreign key,
+folioProyecto int not null,
 Fecha1 date,
 Fecha2 date,
 Fecha3 date,
@@ -33,6 +34,7 @@ Fecha5 date
 )
 
 create table Asesores(
+cveAsesor varchar(10) primary key,
 nombre varchar(30) not null,
 correo varchar(60) not null,
 telefono varchar(13)
