@@ -1,6 +1,5 @@
 create database Residencias
 
---nombre, apellido, matricula, telefono, correo, carrera, sexo
 create table Alumnos ( 
 matricula varchar(10) primary key,
 nombre varchar(30) not null,
@@ -19,14 +18,9 @@ nombre varchar(50) not null unique
 
 create table Usuarios(
 NombreUser varchar(30) not null,
-<<<<<<< HEAD
 Contraseña varchar(30) not null,
 Cargo varchar(30) not null,
 cveAsesor varchar(10) not null
-=======
-ContraseÃ±a varchar(30) not null,
-Cargo varchar(30) not null
->>>>>>> origin/master
 )
 
 --aqui se tendra que crear una relacion con proyectos
@@ -43,13 +37,11 @@ Fecha5 date
 create table Asesores(
 cveAsesor varchar(10) primary key,
 nombre varchar(30) not null,
+apPaterno varchar(30) not null,
+apMaterno varchar(30) not null,
 correo varchar(60) not null,
-<<<<<<< HEAD
 telefono varchar(13),
 cve_carrera varchar(15) not null
-=======
-telefono varchar(13)
->>>>>>> origin/master
 )
 
 create table Proyectos(
@@ -66,13 +58,8 @@ inicio date not null,
 fin date
 )
 
-<<<<<<< HEAD
-
 create table Documentos(
 folioProyecto int not null,
-=======
-create table Documentos(
->>>>>>> origin/master
 SolicitudResidencia bit,
 AnteProyecto bit,
 CartaPresentacion bit,
@@ -91,7 +78,7 @@ ResumenEjecutivo bit,
 Informe bit,
 CartaAceptacion bit
 )
-<<<<<<< HEAD
+
 
 ------------------Relaciones-------------------
 alter table Alumnos add foreign key(cve_carrera) references Carreras(cve_carrera)
@@ -101,5 +88,3 @@ alter table Proyectos add foreign key(matriculaAlumno) references Alumnos(matric
 alter table Proyectos add foreign key(cveAsesor) references Asesores(cveAsesor)
 alter table Usuarios add foreign key(cveAsesor) references Asesores(cveAsesor)
 alter table Documentos add foreign key(folioProyecto) references Proyectos(folioProyecto)
-=======
->>>>>>> origin/master
