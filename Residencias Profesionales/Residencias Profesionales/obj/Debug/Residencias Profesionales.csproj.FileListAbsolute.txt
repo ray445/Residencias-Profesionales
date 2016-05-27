@@ -19,3 +19,9 @@ C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Deb
 C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe.config
 C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.exe
 C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.pdb
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.pdb
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csprojResolveAssemblyReference.cache
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Form1.resources
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Properties.Resources.resources
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csproj.GenerateResource.Cache
