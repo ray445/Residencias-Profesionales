@@ -18,11 +18,7 @@ nombre varchar(50) not null unique
 
 create table Usuarios(
 NombreUser varchar(30) not null,
-<<<<<<< HEAD
-Contraseña varchar(30) not null,
-=======
-ContraseÃ±a varchar(30) not null,
->>>>>>> origin/master
+Contraseña varchar(60) not null,
 Cargo varchar(30) not null,
 cveAsesor varchar(10) not null
 )
@@ -84,6 +80,7 @@ CartaAceptacion bit
 )
 
 
+
 ------------------Relaciones-------------------
 alter table Alumnos add foreign key(cve_carrera) references Carreras(cve_carrera)
 alter table Asesores add foreign key(cve_carrera) references Carreras(cve_carrera)
@@ -92,4 +89,3 @@ alter table Proyectos add foreign key(matriculaAlumno) references Alumnos(matric
 alter table Proyectos add foreign key(cveAsesor) references Asesores(cveAsesor)
 alter table Usuarios add foreign key(cveAsesor) references Asesores(cveAsesor)
 alter table Documentos add foreign key(folioProyecto) references Proyectos(folioProyecto)
-
