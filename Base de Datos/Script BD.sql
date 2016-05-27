@@ -54,3 +54,23 @@ periodo varchar(45) not null,
 inicio date not null, 
 fin date
 )
+
+create table Documentos(
+SolicitudResidencia bit,
+AnteProyecto bit,
+CartaPresentacion bit,
+Dictamen bit,
+AsignacionExterno bit,
+AsignacionInterno bit,
+Seguimiento bit,
+RegistrosAsesoria bit,
+CartaTerminacion bit,
+SolicitudRevisor bit,
+AsignacionRevisor1 bit,
+AsignacionRevisor2 bit,
+FormatoEvaluacion bit,
+CartaAgadecimiento bit,
+ResumenEjecutivo bit,
+Informe bit,
+CartaAceptacion bit
+)
