@@ -43,11 +43,14 @@ telefono varchar(13)
 
 create table Proyectos(
 folioProyecto int identity primary key,
-matricula varchar(10) not null,
+matriculaAlumno varchar(10) not null,
 nombreProyecto varchar(50) not null,
 nombreEmpresa varchar(50) not null,
 calificacion int null,
 cveAsesor varchar(10),
 cveRevisor1 varchar(10),
 cveRevisor2 varchar(10), 
+periodo varchar(45) not null,
+inicio date not null, 
+fin date
 )
