@@ -33,9 +33,21 @@ Fecha4 date,
 Fecha5 date
 )
 
+--agregue una PK para poder asignar a proyectos
 create table Asesores(
 cveAsesor varchar(10) primary key,
 nombre varchar(30) not null,
 correo varchar(60) not null,
 telefono varchar(13)
+)
+
+create table Proyectos(
+folioProyecto int identity primary key,
+matricula varchar(10) not null,
+nombreProyecto varchar(50) not null,
+nombreEmpresa varchar(50) not null,
+calificacion int null,
+cveAsesor varchar(10),
+cveRevisor1 varchar(10),
+cveRevisor2 varchar(10), 
 )
