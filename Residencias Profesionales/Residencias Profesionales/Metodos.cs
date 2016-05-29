@@ -97,6 +97,26 @@ namespace Residencias_Profesionales
             }
         }
 
+
+        public bool insertarUsuario(string user,string pass, string cargo,string cve)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Exec sp_InsertarUsuario '" + user + "','" + Seguridad.encriptar( pass) + "','" + cargo + "','" + cve + "'", Conectar());
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return false;
+            }
+            finally
+            {
+                Desconcetar();
+            }
+        }
+
         public void combos(ComboBox cb, string cmd, string tabla, string dsm, string vm)
         {
             DataSet ds = new DataSet();

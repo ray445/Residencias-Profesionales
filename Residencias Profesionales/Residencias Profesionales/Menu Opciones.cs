@@ -25,7 +25,8 @@ namespace Residencias_Profesionales
 
         private void btnCoordinador_Click(object sender, EventArgs e)
         {
-
+            Agregar_Usuario asd = new Agregar_Usuario();
+            asd.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

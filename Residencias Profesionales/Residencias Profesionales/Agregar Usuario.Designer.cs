@@ -61,6 +61,7 @@
             // 
             this.txtContraseña.Location = new System.Drawing.Point(165, 83);
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(100, 20);
             this.txtContraseña.TabIndex = 17;
             // 
@@ -128,6 +129,7 @@
             this.button2.Size = new System.Drawing.Size(51, 48);
             this.button2.TabIndex = 21;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -137,6 +139,7 @@
             this.button1.Size = new System.Drawing.Size(53, 49);
             this.button1.TabIndex = 20;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Agregar_Usuario
             // 
@@ -155,6 +158,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Agregar_Usuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar_Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
