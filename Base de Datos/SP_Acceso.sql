@@ -16,3 +16,5 @@ insert into Usuarios values('Raymundo','patoganzo','Asesor','A-001')
 insert into Asesores values('A-001','Raul','Hdz','Fdz','asdsad','123123123','C-001')
 
 insert into Carreras values('C-001','Sistemas Computacionales')*/
+
+select * from Usuarios
