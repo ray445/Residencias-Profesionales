@@ -14,6 +14,19 @@ C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Deb
 C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csproj.GenerateResource.Cache
 C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.exe
 C:\Users\RHF\Desktop\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.pdb
-C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe.config
-C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.exe
-C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.pdb
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe.config
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.exe
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.pdb
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.exe
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\bin\Debug\Residencias Profesionales.pdb
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csprojResolveAssemblyReference.cache
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Agregar_Asesor.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Agregar_Carrera.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Agregar_Usuario.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Documentos.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.CargaAlumnos.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Datos_Alumnos.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Login.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Menu_Opciones.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.Properties.Resources.resources
+C:\Users\juan-\Source\Repos\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csproj.GenerateResource.Cache

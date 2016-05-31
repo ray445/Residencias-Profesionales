@@ -55,6 +55,7 @@ namespace Residencias_Profesionales
             Metodos log = new Metodos();
             if (log.login(textBox1.Text, textBox2.Text))
             {
+                MessageBox.Show("Bienvenido prro");
                 this.Hide();
                 menu.ShowDialog();
                 textBox1.Clear();
