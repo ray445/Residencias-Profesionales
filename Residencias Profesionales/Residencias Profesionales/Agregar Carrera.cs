@@ -12,9 +12,24 @@ namespace Residencias_Profesionales
 {
     public partial class Agregar_Carrera : Form
     {
+        private Metodos AC = new Metodos();
         public Agregar_Carrera()
         {
             InitializeComponent();
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            //if (MessageBox.Show("¿Desea relizar el registro?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            //{
+            AC.insertarCarrera(txtCveCarrera.Text, txtNombre.Text);
+                //{
+                //    MessageBox.Show("Datos Agregados", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //    txtCveCarrera.Clear();txtNombre.Clear();
+                //}
+                //else
+                //    MessageBox.Show("Error al Agregar los Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
     }
 }

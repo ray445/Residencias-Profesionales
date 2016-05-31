@@ -48,29 +48,28 @@
             this.cbxCargo.Location = new System.Drawing.Point(21, 130);
             this.cbxCargo.Name = "cbxCargo";
             this.cbxCargo.Size = new System.Drawing.Size(121, 21);
-            this.cbxCargo.TabIndex = 19;
+            this.cbxCargo.TabIndex = 3;
             // 
             // txtCveAsesor
             // 
             this.txtCveAsesor.Location = new System.Drawing.Point(165, 132);
             this.txtCveAsesor.Name = "txtCveAsesor";
             this.txtCveAsesor.Size = new System.Drawing.Size(100, 20);
-            this.txtCveAsesor.TabIndex = 18;
+            this.txtCveAsesor.TabIndex = 4;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(165, 83);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(100, 20);
-            this.txtContraseña.TabIndex = 17;
+            this.txtContraseña.TabIndex = 2;
             // 
             // txtNomUsuario
             // 
             this.txtNomUsuario.Location = new System.Drawing.Point(21, 83);
             this.txtNomUsuario.Name = "txtNomUsuario";
-            this.txtNomUsuario.Size = new System.Drawing.Size(112, 20);
-            this.txtNomUsuario.TabIndex = 16;
+            this.txtNomUsuario.Size = new System.Drawing.Size(121, 20);
+            this.txtNomUsuario.TabIndex = 1;
             // 
             // label5
             // 
@@ -127,7 +126,7 @@
             this.button2.Location = new System.Drawing.Point(165, 158);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(51, 48);
-            this.button2.TabIndex = 21;
+            this.button2.TabIndex = 6;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -137,7 +136,7 @@
             this.button1.Location = new System.Drawing.Point(80, 157);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(53, 49);
-            this.button1.TabIndex = 20;
+            this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

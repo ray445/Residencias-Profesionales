@@ -17,10 +17,10 @@ namespace Residencias_Profesionales
         }
 
         public static string desencriptar(string palabra)
-        {
+        {            
             string result = string.Empty;
-            byte[] desencript = Convert.FromBase64String(palabra);
-            result = Convert.ToBase64String(desencript);
+            byte[] desencrip = Convert.FromBase64String(palabra);
+            result = System.Text.Encoding.Unicode.GetString(desencrip);
             return result;
         }
     }

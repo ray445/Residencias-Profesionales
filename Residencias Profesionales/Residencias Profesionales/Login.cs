@@ -56,7 +56,11 @@ namespace Residencias_Profesionales
             if (log.login(textBox1.Text, textBox2.Text))
             {
                 this.Hide();
-                menu.Show();
+                menu.ShowDialog();
+                textBox1.Clear();
+                textBox2.Clear();
+                this.Show();
+                textBox1.Focus();
             }
             else
                 MessageBox.Show("Datos Incorrectos");

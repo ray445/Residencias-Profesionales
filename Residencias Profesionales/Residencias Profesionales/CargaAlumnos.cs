@@ -24,10 +24,13 @@ namespace Residencias_Profesionales
         {
             if (MessageBox.Show("¿Desea relizar el registro?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) 
             {
-                if (CA.insertarAlumno(txt_matricula.Text, txt_nombre.Text, txt_apP.Text, txt_apM.Text, txt_telefono.Text, txt_correo.Text, comboBox1.SelectedValue.ToString(), sexo))
-                    MessageBox.Show("Datos Agregados", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                else
-                    MessageBox.Show("Error al Agregar los Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CA.insertarAlumno(txt_matricula.Text, txt_nombre.Text, txt_apP.Text, txt_apM.Text, txt_telefono.Text, txt_correo.Text, comboBox1.SelectedValue.ToString(), sexo);
+
+                    //MessageBox.Show("Datos Agregados", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txt_matricula.Clear(); txt_nombre.Clear(); txt_apP.Clear(); txt_apM.Clear(); txt_telefono.Clear(); txt_correo.Clear();
+
+                //else
+                  //  MessageBox.Show("Error al Agregar los Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }                          
         }
 

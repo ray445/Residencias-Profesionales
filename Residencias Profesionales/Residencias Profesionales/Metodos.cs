@@ -58,63 +58,84 @@ namespace Residencias_Profesionales
             
         }
 
-     public bool insertarAlumno(string matricula,string nombre, string app, string apm, string tel, string correo, string carrera, string sexo)
+        public void insertarAlumno(string matricula,string nombre, string app, string apm, string tel, string correo, string carrera, string sexo)
         {
             try
             {
-          //@matricula varchar(10),@nombre varchar(30),@apP varchar(30),@apM varchar(30),@telefono varchar(13),@correo varchar(100),@cve_carrera varchar(15),@sexo char(1)
-                SqlCommand cmd = new SqlCommand("exec sp_insertarAlumnos '"+matricula+"','"+nombre+"','"+app+"','"+apm+"','"+tel+"','"+correo+"','"+carrera+"','"+sexo+"'", Conectar());
-                cmd.ExecuteNonQuery();
-                return true;
+                string msj;
+                //@matricula varchar(10),@nombre varchar(30),@apP varchar(30),@apM varchar(30),@telefono varchar(13),@correo varchar(100),@cve_carrera varchar(15),@sexo char(1)
+                SqlCommand cmd = new SqlCommand("exec sp_insertarAlumnos '" + matricula + "','" + nombre + "','" + app + "','" + apm + "','" + tel + "','" + correo + "','" + carrera + "','" + sexo + "'", Conectar());
+                msj = cmd.ExecuteNonQuery().ToString();
+                if (msj == "1")
+                {
+                    MessageBox.Show("Datos Agregados", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                if(msj=="0")
+                {
+                    MessageBox.Show("Error al Agregar los Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                return false;
-            }
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.ToString());
+            //    return false;
+            //}
             finally
             {
                 Desconcetar();
             }
         }
                 
-        public bool insertaeAsesor(string cve, string nombre, string app, string apm,  string correo, string tel, string carrera)
-        {
-            try
-            {                
-                SqlCommand cmd = new SqlCommand("Exec sp_insertarAsesores '"+cve+"','"+nombre+"','"+app+"','"+apm+"','"+correo+"','"+tel+"','"+carrera+"'", Conectar());
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                return false;
-            }
-            finally
-            {
-                Desconcetar();
-            }
+        public void insertaeAsesor(string cve, string nombre, string app, string apm,  string correo, string tel, string carrera)
+        {            
+            SqlCommand cmd = new SqlCommand("sp_insertarAsesores", Conectar());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@cveAsesor", cve));
+            cmd.Parameters.Add(new SqlParameter("@nombre", nombre));
+            cmd.Parameters.Add(new SqlParameter("@apPaterno", app));
+            cmd.Parameters.Add(new SqlParameter("@apMaterno", apm));
+            cmd.Parameters.Add(new SqlParameter("@correo", correo));
+            cmd.Parameters.Add(new SqlParameter("@telefono", tel));
+            cmd.Parameters.Add(new SqlParameter("@cve_carrera", carrera));
+            SqlParameter msj = new SqlParameter("@msj", SqlDbType.VarChar, 100);
+            msj.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(msj);
+            cmd.ExecuteNonQuery();
+            string info = cmd.Parameters["@msj"].Value.ToString();
+            MessageBox.Show(info);
+
         }
 
-
-        public bool insertarUsuario(string user,string pass, string cargo,string cve)
+        public void insertarCarrera(string cve, string nombre)
         {
-            try
-            {
-                SqlCommand cmd = new SqlCommand("Exec sp_InsertarUsuario '" + user + "','" + Seguridad.encriptar( pass) + "','" + cargo + "','" + cve + "'", Conectar());
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                return false;
-            }
-            finally
-            {
-                Desconcetar();
-            }
+            SqlCommand cmd = new SqlCommand("sp_insertarCarreras", Conectar());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@cve", cve));
+            cmd.Parameters.Add(new SqlParameter("@nombre", nombre));
+            SqlParameter msj = new SqlParameter("@msj", SqlDbType.VarChar, 50);
+            msj.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(msj);
+            cmd.ExecuteNonQuery();
+            string info = cmd.Parameters["@msj"].Value.ToString();            
+            MessageBox.Show(info);
+        }
+
+        public void insertarUsuario(string user, string pass, string cargo, string cve)
+        {
+            SqlCommand cmd = new SqlCommand("sp_InsertarUsuario",Conectar());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@NombreUser", user));
+            cmd.Parameters.Add(new SqlParameter("@Contraseña", pass));
+            cmd.Parameters.Add(new SqlParameter("@Cargo", cargo));
+            cmd.Parameters.Add(new SqlParameter("@cveAsesor", cve));
+            SqlParameter msj = new SqlParameter("@msj", SqlDbType.VarChar, 50);
+            msj.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(msj);
+            cmd.ExecuteNonQuery();
+            string info = cmd.Parameters["@msj"].Value.ToString();
+            MessageBox.Show(info);
+
         }
 
         public void combos(ComboBox cb, string cmd, string tabla, string dsm, string vm)

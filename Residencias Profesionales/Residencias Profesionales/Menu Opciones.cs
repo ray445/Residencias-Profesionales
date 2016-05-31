@@ -20,31 +20,39 @@ namespace Residencias_Profesionales
 
         private void Menu_Opciones_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCoordinador_Click(object sender, EventArgs e)
         {
-            Agregar_Usuario asd = new Agregar_Usuario();
-            asd.ShowDialog();
+            Agregar_Usuario au = new Agregar_Usuario();
+            this.Hide();
+            au.ShowDialog();
+            this.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Agregar_Asesor  asd = new Agregar_Asesor();
+            this.Hide();
             asd.ShowDialog();
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             CargaAlumnos CA = new CargaAlumnos();
+            this.Hide();
             CA.ShowDialog();
+            this.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Agregar_Carrera NC = new Agregar_Carrera();
+            this.Hide();
             NC.ShowDialog();
+            this.Show();
         }
     }
 }
