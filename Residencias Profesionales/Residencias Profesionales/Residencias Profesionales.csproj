@@ -57,6 +57,12 @@
     <Compile Include="Agregar Carrera.Designer.cs">
       <DependentUpon>Agregar Carrera.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agregar Proyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar Proyectos.Designer.cs">
+      <DependentUpon>Agregar Proyectos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agregar Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,12 @@
     </Compile>
     <Compile Include="Busqueda Alumnos.designer.cs">
       <DependentUpon>Busqueda Alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Captura de Calificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Captura de Calificacion.Designer.cs">
+      <DependentUpon>Captura de Calificacion.cs</DependentUpon>
     </Compile>
     <Compile Include="CargaAlumnos.cs">
       <SubType>Form</SubType>
@@ -103,11 +115,17 @@
     <EmbeddedResource Include="Agregar Carrera.resx">
       <DependentUpon>Agregar Carrera.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Agregar Proyectos.resx">
+      <DependentUpon>Agregar Proyectos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agregar Usuario.resx">
       <DependentUpon>Agregar Usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Busqueda Alumnos.resx">
       <DependentUpon>Busqueda Alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Captura de Calificacion.resx">
+      <DependentUpon>Captura de Calificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CargaAlumnos.resx">
       <DependentUpon>CargaAlumnos.cs</DependentUpon>

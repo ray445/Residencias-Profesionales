@@ -14,16 +14,12 @@ create procedure sp_InsertarProyecto
 @inicio date, 
 @fin date
 as	
-	begin
-		begin try 
-			begin tran t
+	begin	
 				insert into Proyectos(matriculaAlumno, nombreEmpresa, nombreProyecto, calificacion, cveAsesor,
 				 cveRevisor1, cveRevisor2, periodo, inicio, fin)
 				values(@matriculaAlumno,@nombreEmpresa,@nombreProyecto,@calificacion,
-				@cveAsesor,@cveRevisor1,@cveRevisor2,@periodo,@inicio,@fin)
-			commit tran t
-		end try
-		begin catch
-			rollback tran t
-		end catch
+				@cveAsesor,@cveRevisor1,@cveRevisor2,@periodo,@inicio,@fin)			
 	end
+
+
+	

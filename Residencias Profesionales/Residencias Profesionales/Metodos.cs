@@ -138,6 +138,39 @@ namespace Residencias_Profesionales
 
         }
 
+        public bool insertarProyecto(string matricula, string nombre, string emp, string asesor, string revisor1, string revisor2, string periodo, DateTime inicio,DateTime fin)
+        {
+            try
+            {                          
+                SqlCommand cmd = new SqlCommand("exec sp_InsertarProyecto '" + matricula + "','" + nombre + "','" + emp + "',null,'" + asesor + "','" + revisor1 + "','" + revisor2 + "','" + periodo + "','" + inicio + "','"+fin+"'", Conectar());
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return false;
+            }
+            finally
+            {
+                Desconcetar();
+            }
+        }
+
+        public void CapturarCalificacion(int folio,int calificacion)
+        {
+            SqlCommand cmd = new SqlCommand("sp_updateproyecto", Conectar());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@calificacion", calificacion));
+            cmd.Parameters.Add(new SqlParameter("@folioProyecto", folio));
+            SqlParameter msj = new SqlParameter("@msj", SqlDbType.VarChar, 100);
+            msj.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(msj);
+            cmd.ExecuteNonQuery();
+            string info = cmd.Parameters["@msj"].Value.ToString();
+            MessageBox.Show(info);
+        }
+
         public void combos(ComboBox cb, string cmd, string tabla, string dsm, string vm)
         {
             DataSet ds = new DataSet();
