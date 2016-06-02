@@ -1,12 +1,13 @@
 
 
 create procedure sp_Acceso 
-@nombre varchar(30), @contraseña varchar(60)
+@nombre varchar(30), @contraseÃ±a varchar(60)
 as
 begin 
-	select NombreUser as Nombre, Contraseña from Usuarios
-	where NombreUser=@nombre and @contraseña=Contraseña
+	select NombreUser as Nombre, ContraseÃ±a,Cargo  from Usuarios
+	where NombreUser=@nombre and @contraseÃ±a=ContraseÃ±a
 end
+
 
 --exec sp_Acceso 'Raymundo','patoganzo'
 
