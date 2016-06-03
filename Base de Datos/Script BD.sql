@@ -6,7 +6,7 @@ nombre varchar(30) not null,
 apPaterno varchar(30) not null,
 apMaterno varchar(30) not null,
 telefono varchar(13) null,
-correo varchar(100) not null,
+correo text not null,
 cve_carrera varchar(15) not null,
 sexo char(1) not null,
 )
@@ -39,7 +39,7 @@ cveAsesor varchar(10) primary key,
 nombre varchar(30) not null,
 apPaterno varchar(30) not null,
 apMaterno varchar(30) not null,
-correo varchar(60) not null,
+correo text not null,
 telefono varchar(13),
 cve_carrera varchar(15) not null
 )
