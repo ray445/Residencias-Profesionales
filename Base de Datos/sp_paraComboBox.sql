@@ -17,8 +17,6 @@ begin
 end
 
 
---insert into Proyectos values(131000123,'Residencias','Google',null,'123','1234','321','Febrero-agosto','2016-05-31','2016-09-15')
-
 alter proc comboAsesores
 as
 begin
@@ -38,6 +36,10 @@ begin
 	order by nom
 end
 
-select cast(4 as float)/cast(5 as float)
-
-exec comboAsesores
+create proc comboProyectos
+as
+begin
+	select UPPER(nombreProyecto+' '+'PARA'+' '+nombreEmpresa) as proyecto,folioProyecto as folio from Proyectos
+	where calificacion is null
+	order by proyecto
+end
