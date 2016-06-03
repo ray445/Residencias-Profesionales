@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace Residencias_Profesionales
 {
-    public partial class Documentos : Form
+    public partial class Datos_Alumnos : Form
     {
-        public Documentos()
+        public Datos_Alumnos()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            //Documentos asd = new Documentos(dataGridView1[0,e.RowIndex].Value.ToString());
+            Documentos asd = new Documentos("ASD");
+            this.Hide();
+            asd.ShowDialog();
+            this.Show();
+            textBox1.Clear();
         }
     }
 }

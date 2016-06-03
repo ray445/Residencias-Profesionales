@@ -4,7 +4,7 @@ create procedure sp_Acceso
 @nombre varchar(30), @contraseña varchar(60)
 as
 begin 
-	select NombreUser as Nombre, Contraseña from Usuarios
+	select NombreUser as Nombre, Contraseña,Cargo  from Usuarios
 	where NombreUser=@nombre and @contraseña=Contraseña
 end
 

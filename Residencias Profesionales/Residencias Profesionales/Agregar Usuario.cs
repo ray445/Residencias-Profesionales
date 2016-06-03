@@ -20,12 +20,29 @@ namespace Residencias_Profesionales
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AU.insertarUsuario(txtNomUsuario.Text, txtContraseña.Text, cbxCargo.Text, txtCveAsesor.Text);
+            if (string.IsNullOrWhiteSpace(txtNomUsuario.Text)||string.IsNullOrWhiteSpace(txtContraseña.Text))
+            {
+                MessageBox.Show("Campos Vacios", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show(cbxCveAsesor.SelectedValue.ToString());
+                if(MessageBox.Show("¿Desea relizar el registro?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    AU.insertarUsuario(txtNomUsuario.Text, txtContraseña.Text, cbxCargo.Text, cbxCveAsesor.SelectedValue.ToString());
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Agregar_Usuario_Load(object sender, EventArgs e)
+        {
+            cbxCargo.Text = "Administrador";
+            AU.combos(cbxCveAsesor, "exec combo_cveAsesor_Usuarios","Asesores", "nombre", "cveAsesor");
         }
     }
 }

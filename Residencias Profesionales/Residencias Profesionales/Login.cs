@@ -47,24 +47,47 @@ namespace Residencias_Profesionales
         {
             this.Close();
         }
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
             Menu_Opciones menu = new Menu_Opciones();
+            Menú_Coordinador mc = new Menú_Coordinador();
             Metodos log = new Metodos();
-            if (log.login(textBox1.Text, textBox2.Text))
-            {                
-                this.Hide();
-                menu.ShowDialog();
-                textBox1.Clear();
-                textBox2.Clear();
-                this.Show();
-                textBox1.Focus();
+            if (string.IsNullOrWhiteSpace(textBox1.Text) == false && string.IsNullOrWhiteSpace(textBox2.Text) == false)
+            {
+                if (log.login(textBox1.Text, textBox2.Text) == "Administrador")
+                {
+                    this.Hide();
+                    menu.ShowDialog();
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    this.Show();
+                    textBox1.Focus();
+                }
             }
-            else
-                MessageBox.Show("Datos Incorrectos");
-            
+            if (string.IsNullOrWhiteSpace(textBox1.Text) == false && string.IsNullOrWhiteSpace(textBox2.Text) == false)
+            {
+                if (log.login(textBox1.Text, textBox2.Text) == "Coordinador")
+                {
+                    this.Hide();
+                    mc.ShowDialog();
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    this.Show();
+                    textBox1.Focus();
+                }
+            }
+            if (string.IsNullOrWhiteSpace(textBox1.Text) == false && string.IsNullOrWhiteSpace(textBox2.Text) == false)
+            {
+                if (log.login(textBox1.Text, textBox2.Text) == string.Empty)
+                {
+                    MessageBox.Show("Datos incorrectos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox1.Focus();
+                }
+            }
         }
     }
 }

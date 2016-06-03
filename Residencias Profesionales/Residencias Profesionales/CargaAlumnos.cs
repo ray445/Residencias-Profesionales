@@ -22,16 +22,22 @@ namespace Residencias_Profesionales
       
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea relizar el registro?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) 
+            if (string.IsNullOrWhiteSpace(txt_matricula.Text) || string.IsNullOrWhiteSpace(txt_nombre.Text) || string.IsNullOrWhiteSpace(txt_correo.Text) || string.IsNullOrWhiteSpace(txt_apP.Text) || string.IsNullOrWhiteSpace(txt_apM.Text))
             {
-                CA.insertarAlumno(txt_matricula.Text, txt_nombre.Text, txt_apP.Text, txt_apM.Text, txt_telefono.Text, txt_correo.Text, comboBox1.SelectedValue.ToString(), sexo);
+                MessageBox.Show("Campos Vacios", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else {
+                if (MessageBox.Show("¿Desea relizar el registro?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    CA.insertarAlumno(txt_matricula.Text, txt_nombre.Text, txt_apP.Text, txt_apM.Text, txt_telefono.Text, txt_correo.Text, comboBox1.SelectedValue.ToString(), sexo);
 
                     //MessageBox.Show("Datos Agregados", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txt_matricula.Clear(); txt_nombre.Clear(); txt_apP.Clear(); txt_apM.Clear(); txt_telefono.Clear(); txt_correo.Clear();
 
-                //else
-                  //  MessageBox.Show("Error al Agregar los Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }                          
+                    //else
+                    //  MessageBox.Show("Error al Agregar los Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }                        
         }
 
         private void rb_F_CheckedChanged(object sender, EventArgs e)

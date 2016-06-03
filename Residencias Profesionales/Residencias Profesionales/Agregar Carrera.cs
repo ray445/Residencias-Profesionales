@@ -20,16 +20,23 @@ namespace Residencias_Profesionales
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            //if (MessageBox.Show("¿Desea relizar el registro?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            //{
-            AC.insertarCarrera(txtCveCarrera.Text, txtNombre.Text);
-                //{
+            if (string.IsNullOrWhiteSpace(txtCveCarrera.Text)||string.IsNullOrWhiteSpace(txtNombre.Text))
+            {
+                MessageBox.Show("Campos vacios", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                if (MessageBox.Show("¿Desea relizar el registro?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    AC.insertarCarrera(txtCveCarrera.Text, txtNombre.Text);
+                }
+                    //{
                 //    MessageBox.Show("Datos Agregados", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //    txtCveCarrera.Clear();txtNombre.Clear();
                 //}
                 //else
                 //    MessageBox.Show("Error al Agregar los Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            }
         }
-    }
+        }
 }

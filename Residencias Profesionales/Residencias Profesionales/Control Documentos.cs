@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace Residencias_Profesionales
 {
-    public partial class Datos_Alumnos : Form
+    public partial class Documentos : Form
     {
-        public Datos_Alumnos()
+        private string matricula;
+        public Documentos(string mat)
         {
             InitializeComponent();
+            matricula = mat;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -25,7 +25,14 @@ namespace Residencias_Profesionales
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CC.CapturarCalificacion(Convert.ToInt32( txtFpro.Text),Convert.ToInt32( txtCali.Text));
+            CC.CapturarCalificacion(Convert.ToInt32( comboBox1.SelectedValue),Convert.ToInt32( txtCali.Text));
+            txtCali.Value=0;
+            CC.combos(comboBox1, "Exec comboProyectos", "Proyectos", "proyecto", "folio");
+        }
+
+        private void Captura_de_Calificacion_Load(object sender, EventArgs e)
+        {
+            CC.combos(comboBox1, "Exec comboProyectos", "Proyectos", "proyecto", "folio"); 
         }
     }
 }

@@ -37,8 +37,9 @@ namespace Residencias_Profesionales
         }
 
 
-        public bool login(string user, string pass)
+        public string login(string user, string pass)
         {
+            string cargo = string.Empty;
             try
             {
                 SqlDataReader read = null;
@@ -47,13 +48,15 @@ namespace Residencias_Profesionales
                 read.Read();
 
                 if (read["Nombre"].ToString() == user && read["Contraseña"].ToString() == pass)
-                    return true;
+                {
+                    cargo = read["Cargo"].ToString(); return cargo;
+                }
                 else
-                    return false;
+                    return cargo;
             }
             catch (Exception)
             {
-                return false;                
+                return cargo;                
             }
             
         }
