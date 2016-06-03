@@ -81,6 +81,7 @@
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(11, 102);
+            this.txt_nombre.MaxLength = 30;
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(150, 20);
             this.txt_nombre.TabIndex = 3;
@@ -88,6 +89,7 @@
             // txt_apP
             // 
             this.txt_apP.Location = new System.Drawing.Point(11, 152);
+            this.txt_apP.MaxLength = 30;
             this.txt_apP.Name = "txt_apP";
             this.txt_apP.Size = new System.Drawing.Size(150, 20);
             this.txt_apP.TabIndex = 5;
@@ -95,6 +97,7 @@
             // txt_apM
             // 
             this.txt_apM.Location = new System.Drawing.Point(11, 203);
+            this.txt_apM.MaxLength = 30;
             this.txt_apM.Name = "txt_apM";
             this.txt_apM.Size = new System.Drawing.Size(150, 20);
             this.txt_apM.TabIndex = 7;

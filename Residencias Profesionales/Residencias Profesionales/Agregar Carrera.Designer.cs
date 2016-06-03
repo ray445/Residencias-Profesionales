@@ -80,6 +80,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(164, 89);
+            this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 2;
@@ -87,6 +88,7 @@
             // txtCveCarrera
             // 
             this.txtCveCarrera.Location = new System.Drawing.Point(22, 89);
+            this.txtCveCarrera.MaxLength = 15;
             this.txtCveCarrera.Name = "txtCveCarrera";
             this.txtCveCarrera.Size = new System.Drawing.Size(100, 20);
             this.txtCveCarrera.TabIndex = 1;

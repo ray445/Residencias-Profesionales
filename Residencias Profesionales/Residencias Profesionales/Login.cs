@@ -51,6 +51,11 @@ namespace Residencias_Profesionales
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Log();
+        }
+
+        private void Log()
+        {
             Menu_Opciones menu = new Menu_Opciones();
             Menú_Coordinador mc = new Menú_Coordinador();
             Metodos log = new Metodos();
@@ -88,6 +93,18 @@ namespace Residencias_Profesionales
                     textBox1.Focus();
                 }
             }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar( Keys.Enter))
+                Log();
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                Log();
         }
     }
 }

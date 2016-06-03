@@ -42,12 +42,13 @@ namespace Residencias_Profesionales
             string cargo = string.Empty;
             try
             {
+                // 
                 SqlDataReader read = null;
-                SqlCommand cmd = new SqlCommand("exec sp_Acceso '" + user + "','" + pass + "'", Conectar());
+                SqlCommand cmd = new SqlCommand("exec sp_Acceso '" + user + "','" + Seguridad.encriptar(pass) + "'", Conectar());
                 read = cmd.ExecuteReader();
                 read.Read();
 
-                if (read["Nombre"].ToString() == user && read["Contraseña"].ToString() == pass)
+                if (read["Nombre"].ToString() == user && read["Contraseña"].ToString() == Seguridad.encriptar(pass))
                 {
                     cargo = read["Cargo"].ToString(); return cargo;
                 }

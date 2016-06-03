@@ -29,7 +29,7 @@ namespace Residencias_Profesionales
                 MessageBox.Show(cbxCveAsesor.SelectedValue.ToString());
                 if(MessageBox.Show("¿Desea relizar el registro?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    AU.insertarUsuario(txtNomUsuario.Text, txtContraseña.Text, cbxCargo.Text, cbxCveAsesor.SelectedValue.ToString());
+                    AU.insertarUsuario(txtNomUsuario.Text, Seguridad.encriptar( txtContraseña.Text), cbxCargo.Text, cbxCveAsesor.SelectedValue.ToString());
                 }
             }
         }
@@ -42,7 +42,7 @@ namespace Residencias_Profesionales
         private void Agregar_Usuario_Load(object sender, EventArgs e)
         {
             cbxCargo.Text = "Administrador";
-            AU.combos(cbxCveAsesor, "exec combo_cveAsesor_Usuarios","Asesores", "nombre", "cveAsesor");
+            AU.combos(cbxCveAsesor, "exec comboAsesores","Asesores", "nom", "cveAsesor");
         }
     }
 }

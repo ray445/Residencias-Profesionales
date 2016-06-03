@@ -63,6 +63,7 @@
             this.mstxTelefono.Location = new System.Drawing.Point(154, 237);
             this.mstxTelefono.Mask = "000-000-0000";
             this.mstxTelefono.Name = "mstxTelefono";
+            this.mstxTelefono.PromptChar = ' ';
             this.mstxTelefono.Size = new System.Drawing.Size(121, 20);
             this.mstxTelefono.TabIndex = 6;
             // 
@@ -144,6 +145,7 @@
             // txtapMaterno
             // 
             this.txtapMaterno.Location = new System.Drawing.Point(154, 168);
+            this.txtapMaterno.MaxLength = 30;
             this.txtapMaterno.Name = "txtapMaterno";
             this.txtapMaterno.Size = new System.Drawing.Size(121, 20);
             this.txtapMaterno.TabIndex = 4;
@@ -151,6 +153,7 @@
             // txtapPaterno
             // 
             this.txtapPaterno.Location = new System.Drawing.Point(15, 168);
+            this.txtapPaterno.MaxLength = 30;
             this.txtapPaterno.Name = "txtapPaterno";
             this.txtapPaterno.Size = new System.Drawing.Size(121, 20);
             this.txtapPaterno.TabIndex = 3;
@@ -158,6 +161,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(154, 87);
+            this.txtNombre.MaxLength = 30;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(121, 20);
             this.txtNombre.TabIndex = 2;
@@ -175,6 +179,7 @@
             // txtCveAsesor
             // 
             this.txtCveAsesor.Location = new System.Drawing.Point(12, 87);
+            this.txtCveAsesor.MaxLength = 10;
             this.txtCveAsesor.Name = "txtCveAsesor";
             this.txtCveAsesor.Size = new System.Drawing.Size(121, 20);
             this.txtCveAsesor.TabIndex = 1;

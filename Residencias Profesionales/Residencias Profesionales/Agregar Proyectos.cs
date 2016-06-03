@@ -16,6 +16,7 @@ namespace Residencias_Profesionales
         public Agregar_Proyectos()
         {
             InitializeComponent();
+            dateTimePicker1.MinDate = DateTime.Today;            
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -17,3 +17,4 @@ C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionale
 C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.csproj.GenerateResource.Cache
 C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.exe
 C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias Profesionales.pdb
+C:\Users\RHF\Documents\GitHub\Residencias-Profesionales\Residencias Profesionales\Residencias Profesionales\obj\Debug\Residencias_Profesionales.asdsad.resources

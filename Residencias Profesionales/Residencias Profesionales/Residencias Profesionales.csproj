@@ -69,6 +69,12 @@
     <Compile Include="Agregar Usuario.Designer.cs">
       <DependentUpon>Agregar Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="asdsad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asdsad.Designer.cs">
+      <DependentUpon>asdsad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control Documentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Agregar Usuario.resx">
       <DependentUpon>Agregar Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="asdsad.resx">
+      <DependentUpon>asdsad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control Documentos.resx">
       <DependentUpon>Control Documentos.cs</DependentUpon>

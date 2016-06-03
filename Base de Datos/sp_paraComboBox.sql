@@ -32,7 +32,9 @@ begin
 	select @numP_A= COUNT(*) from Proyectos
 	group by cveAsesor*/
 
-	select UPPER(nombre+' '+apPaterno+' '+apMaterno) as nom,cveAsesor from Asesores
+	select UPPER(nombre+' '+apPaterno+' '+apMaterno) as nom,A.cveAsesor as cve from Asesores A left join Usuarios U
+	on A.cveAsesor=U.cveAsesor
+	where u.cveAsesor is null
 	order by nom
 end
 

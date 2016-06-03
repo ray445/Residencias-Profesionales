@@ -170,7 +170,8 @@
             // 
             // txtnombreEmp
             // 
-            this.txtnombreEmp.Location = new System.Drawing.Point(11, 37);
+            this.txtnombreEmp.Location = new System.Drawing.Point(11, 35);
+            this.txtnombreEmp.MaxLength = 50;
             this.txtnombreEmp.Name = "txtnombreEmp";
             this.txtnombreEmp.Size = new System.Drawing.Size(100, 20);
             this.txtnombreEmp.TabIndex = 51;
@@ -187,6 +188,7 @@
             // txt_nomProyecto
             // 
             this.txt_nomProyecto.Location = new System.Drawing.Point(160, 37);
+            this.txt_nomProyecto.MaxLength = 50;
             this.txt_nomProyecto.Name = "txt_nomProyecto";
             this.txt_nomProyecto.Size = new System.Drawing.Size(100, 20);
             this.txt_nomProyecto.TabIndex = 69;
@@ -211,7 +213,7 @@
             // 
             this.cbPeriodo.FormattingEnabled = true;
             this.cbPeriodo.Items.AddRange(new object[] {
-            "Agoto-Dicembre",
+            "Agosto-Diciembre",
             "Febrero-Junio"});
             this.cbPeriodo.Location = new System.Drawing.Point(9, 187);
             this.cbPeriodo.Name = "cbPeriodo";
