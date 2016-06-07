@@ -38,6 +38,14 @@ begin
 	order by nom
 end
 
+create proc comboAsesores2
+as
+begin
+
+	select UPPER(nombre+' '+apPaterno+' '+apMaterno) as nom,cveAsesor as cve from Asesores 
+	order by nom
+end
+
 create proc comboProyectos
 as
 begin
