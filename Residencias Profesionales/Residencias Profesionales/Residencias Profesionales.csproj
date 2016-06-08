@@ -75,6 +75,12 @@
     <Compile Include="asdsad.Designer.cs">
       <DependentUpon>asdsad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Buscar Asesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar Asesor.Designer.cs">
+      <DependentUpon>Buscar Asesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control Documentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,12 @@
       <DependentUpon>Menú Coordinador.cs</DependentUpon>
     </Compile>
     <Compile Include="Metodos.cs" />
+    <Compile Include="Modificar Datos de Asesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Datos de Asesor.Designer.cs">
+      <DependentUpon>Modificar Datos de Asesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seguridad.cs" />
@@ -135,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="asdsad.resx">
       <DependentUpon>asdsad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar Asesor.resx">
+      <DependentUpon>Buscar Asesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control Documentos.resx">
       <DependentUpon>Control Documentos.cs</DependentUpon>
@@ -156,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menú Coordinador.resx">
       <DependentUpon>Menú Coordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Datos de Asesor.resx">
+      <DependentUpon>Modificar Datos de Asesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

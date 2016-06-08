@@ -42,7 +42,7 @@ namespace Residencias_Profesionales
         private void Agregar_Usuario_Load(object sender, EventArgs e)
         {
             cbxCargo.Text = "Administrador";
-            AU.combos(cbxCveAsesor, "exec comboAsesores","Asesores", "nom", "cveAsesor");
+            AU.combos(cbxCveAsesor, "exec comboAsesores","Asesores", "nom", "cve");
         }
     }
 }

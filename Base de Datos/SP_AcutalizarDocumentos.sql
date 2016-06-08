@@ -2,8 +2,8 @@
 
 use residencias
 
-create procedure sp_ActualizarDocumentos
-@folioProyecto int,
+alter procedure sp_ActualizarDocumentos
+@matricula varchar(10),
 @SolicitudResidencia bit,
 @AnteProyecto bit,
 @CartaPresentacion bit,
@@ -20,9 +20,12 @@ create procedure sp_ActualizarDocumentos
 @CartaAgadecimiento bit,
 @ResumenEjecutivo bit,
 @Informe bit,
-@CartaAceptacion bit
+@CartaAceptacion bit,
+@msj varchar(100) output
 as
 	begin
+	declare @folio int
+	select @folio= folioProyecto from proyectos where @matricula = matriculaAlumno
 		begin try 
 			begin tran t
 				update Documentos
@@ -31,13 +34,14 @@ as
 				RegistrosAsesoria = @RegistrosAsesoria, CartaTerminacion = @CartaTerminacion, SolicitudRevisor = @SolicitudRevisor, AsignacionRevisor1 = @AsignacionRevisor1,
 				AsignacionRevisor2 = @AsignacionRevisor2, FormatoEvaluacion = @FormatoEvaluacion, CartaAgadecimiento = @CartaAgadecimiento, ResumenEjecutivo = @ResumenEjecutivo,
 				Informe = @Informe, CartaAceptacion = @CartaAceptacion
-				where folioProyecto = @folioProyecto
+				where folioProyecto = @folio
 			commit tran t
+			set @msj='Se han actualizado los datos'
 		end try
 		begin catch
 			rollback tran t
+			set @msj='Error al actualizar los datos'
 		end catch
 	end
-
 
 

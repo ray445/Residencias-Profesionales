@@ -12,11 +12,20 @@ namespace Residencias_Profesionales
 {
     public partial class Agregar_Proyectos : Form
     {
+        public void SetMyCustomFormat()
+        {
+            // Set the Format type and the CustomFormat string.
+            
+        }
         Metodos AP = new Metodos();
         public Agregar_Proyectos()
         {
             InitializeComponent();
-            dateTimePicker1.MinDate = DateTime.Today;            
+            dateTimePicker1.MinDate = DateTime.Today;
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "yyyy-mm-dddd";
+            dateTimePicker2.Format = DateTimePickerFormat.Custom;
+            dateTimePicker2.CustomFormat = "yyyy-mm-dddd";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,9 +60,9 @@ namespace Residencias_Profesionales
         private void Agregar_Proyectos_Load(object sender, EventArgs e)
         {
             AP.combos(cbxMatricula, "Exec comboAlumnos", "Alumnos", "nom", "matricula");
-            AP.combos(cbxCveAsesor, "Exec comboAsesores", "Asesores", "nom", "cveAsesor");
-            AP.combos(cbxCveRevisor1, "Exec comboAsesores", "Asesores", "nom", "cveAsesor");
-            AP.combos(cbxCveRevisor2, "Exec comboAsesores", "Asesores", "nom", "cveAsesor");
+            AP.combos(cbxCveAsesor, "Exec comboAsesores", "Asesores", "nom", "cve");
+            AP.combos(cbxCveRevisor1, "Exec comboAsesores", "Asesores", "nom", "cve");
+            AP.combos(cbxCveRevisor2, "Exec comboAsesores", "Asesores", "nom", "cve");
             cbPeriodo.SelectedIndex = 0;
 
             dateTimePicker1.MinDate = dateTimePicker1.Value;

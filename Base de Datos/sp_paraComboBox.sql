@@ -34,7 +34,15 @@ begin
 
 	select UPPER(nombre+' '+apPaterno+' '+apMaterno) as nom,A.cveAsesor as cve from Asesores A left join Usuarios U
 	on A.cveAsesor=U.cveAsesor
-	where u.cveAsesor is null
+	--where u.cveAsesor is null
+	order by nom
+end
+
+create proc comboAsesores2
+as
+begin
+
+	select UPPER(nombre+' '+apPaterno+' '+apMaterno) as nom,cveAsesor as cve from Asesores 
 	order by nom
 end
 

@@ -24,13 +24,15 @@ cveAsesor varchar(10) not null
 )
 
 --aqui se tendra que crear una relacion con proyectos
+
+
+--alter table FechasRev drop column Fecha4
+--alter table FechasRev drop column Fecha5
 create table FechasRev(
 folioProyecto int not null,
 Fecha1 date,
 Fecha2 date,
-Fecha3 date,
-Fecha4 date,
-Fecha5 date
+Fecha3 date
 )
 
 --agregue una PK para poder asignar a proyectos

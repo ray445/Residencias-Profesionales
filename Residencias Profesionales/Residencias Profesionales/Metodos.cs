@@ -146,7 +146,7 @@ namespace Residencias_Profesionales
         {
             try
             {                          
-                SqlCommand cmd = new SqlCommand("exec sp_InsertarProyecto '" + matricula + "','" + nombre + "','" + emp + "',null,'" + asesor + "','" + revisor1 + "','" + revisor2 + "','" + periodo + "','" + inicio + "','"+fin+"'", Conectar());
+                SqlCommand cmd = new SqlCommand("exec sp_InsertarProyecto '" + matricula + "','" + nombre + "','" + emp + "',null,'" + asesor + "','" + revisor1 + "','" + revisor2 + "','" + periodo + "','" + inicio.ToOADate() + "','"+fin.ToOADate()+"'", Conectar());
                 cmd.ExecuteNonQuery();
                 return true;
             }
@@ -189,6 +189,56 @@ namespace Residencias_Profesionales
             catch (Exception ex)
             {
 
+            }
+        }
+
+        public void modificarAsesor(string cve, string nombre, string app, string apm, string correo, string tel, string carrera)
+        {
+            SqlCommand cmd = new SqlCommand("sp_modificarAsesor", Conectar());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@cveAsesor", cve));
+            cmd.Parameters.Add(new SqlParameter("@nombre", nombre));
+            cmd.Parameters.Add(new SqlParameter("@apPaterno", app));
+            cmd.Parameters.Add(new SqlParameter("@apMaterno", apm));
+            cmd.Parameters.Add(new SqlParameter("@correo", correo));
+            cmd.Parameters.Add(new SqlParameter("@telefono", tel));
+            cmd.Parameters.Add(new SqlParameter("@cve_carrera", carrera));
+            SqlParameter msj = new SqlParameter("@msj", SqlDbType.VarChar, 100);
+            msj.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(msj);
+            cmd.ExecuteNonQuery();
+            string info = cmd.Parameters["@msj"].Value.ToString();
+            MessageBox.Show(info);
+
+        }
+
+        public void eliminarAsesor(string cve)
+        {
+            SqlCommand cmd = new SqlCommand("sp_eliminarAsesor", Conectar());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@cveAsesor", cve));
+            SqlParameter msj = new SqlParameter("@msj", SqlDbType.VarChar, 100);
+            msj.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(msj);
+            cmd.ExecuteNonQuery();
+            string info = cmd.Parameters["@msj"].Value.ToString();
+            MessageBox.Show(info);
+
+        }
+
+        public DataSet buscarAsesor(string clave, string nombre)
+        {
+            try
+            {
+              SqlDataAdapter da = new SqlDataAdapter("Exec sp_BuscarAsesor '" + clave+"','"+nombre+"'", Conectar());
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                Desconcetar();
+                return ds;
+            }
+            catch (Exception)
+            {
+                return null;
             }
         }
     }
