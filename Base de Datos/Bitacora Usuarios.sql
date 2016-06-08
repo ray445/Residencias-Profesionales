@@ -1,0 +1,16 @@
+create table bitacora_Usuarios(
+	id_bitacora_U int identity,
+	NombreUser varchar(30),
+	NombreUser_nuevo varchar(30),
+	NombreUser_viejo varchar(30),
+	Contraseña varchar(60),	
+	Contraseña_nuevo varchar(60),
+	Contraseña_viejo varchar(60),
+	Cargo varchar(30),
+	Cargo_nuevo varchar(30),
+	Cargo_viejo varchar(30),
+	cveAsesor varchar(10),
+	cveAsesor_nuevo varchar(10),
+	cveAsesor_viejo varchar(10),
+	operacion varchar(15),
+	usuario varchar(10))

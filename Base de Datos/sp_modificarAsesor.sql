@@ -1,3 +1,4 @@
+
 alter proc sp_modificarAsesor 
 @cveAsesor varchar ( 10 ),@nombre varchar ( 30 ),@apPaterno varchar ( 30 ),
 @apMaterno varchar ( 30 ),@correo varchar ( 60 ),
@@ -18,5 +19,3 @@ begin
 		set @msj='Error al Agregar los Datos'
 		end catch
 end
-
-select * from usuarios

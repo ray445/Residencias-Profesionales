@@ -1,3 +1,4 @@
+
 alter proc sp_BuscarAsesor
 @cve varchar(10), @nombre varchar(60)
 as
@@ -12,5 +13,3 @@ begin
 		where A.cveAsesor like @cve+'%'
 end
 
-select * from asesores
-exec sp_BuscarAsesor '','mar'
