@@ -1,9 +1,10 @@
+--cambio el nombre del sp
+--cambio folio por matricula
 
 
-
-create proc sp_updateproyecto
+create proc sp_updateCalifproyecto
  @calificacion int,
- @folioProyecto int,
+ @matricula varchar(10),
  @msj varchar(100) output
 as
 begin
@@ -11,7 +12,7 @@ begin
 		begin tran t
 		UPDATE Proyectos
 		SET calificacion = @calificacion
-		WHERE folioProyecto = @folioProyecto
+		WHERE matriculaAlumno=@matricula
 		commit tran t
 		set @msj='Datos Agregados'
 	end try
