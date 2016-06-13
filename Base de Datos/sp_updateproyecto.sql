@@ -21,3 +21,5 @@ begin
 		set @msj='Error al cargar los datos'
 	end catch	
 end
+
+este SP acualizaremos los datos de la tabla proyectos los datos que se actualizarab son calificacion,matricula
