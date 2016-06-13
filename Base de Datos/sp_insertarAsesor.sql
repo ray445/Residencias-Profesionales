@@ -18,3 +18,6 @@ begin
 end
 
 select * from asesores
+
+----este SP vamos a insertar las datos siguentes para para la tabla asesores tambien mostramos
+----un mensaje donde los datos ya an sido agregados en la tabla
