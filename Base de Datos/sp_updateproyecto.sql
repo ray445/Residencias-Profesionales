@@ -22,4 +22,5 @@ begin
 	end catch	
 end
 
-este SP acualizaremos los datos de la tabla proyectos los datos que se actualizarab son calificacion,matricula
+--este SP acualizaremos los datos de la tabla proyectos los datos que se actualizarab son calificacion,matricula
+---CREADO POR CONSUELO MENA VASQUEZ
