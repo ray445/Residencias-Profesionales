@@ -26,3 +26,4 @@ end
 
 --en este SP donde buscaremos  mediante matricula ,nombre y cve_carrera en este caso utilisaremos tres tablas
 --que son las tablas "documentos","proyecto"y"alumnos" se utilisan los if por si no entra en matricula entra en la otra opcion nombre 
+----CREADO POR CONSUELO MENA VASQUEZ
